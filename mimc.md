@@ -21,4 +21,4 @@ The precise definition of the round function of MiMC and all other details can b
 # Implementations
 
 # Third-Party Analysis
-Since its publication in 2016, no attack on full-round MiMC was found. The only third-party analysis published regards an [interpolation attack on reduced-round MiMC in a low-memory scenario](https://eprint.iacr.org/2019/812){:target="_blank"}.
+Since its publication in 2016, no attack on full-round MiMC was found. The only third-party analysis published regards an [interpolation attack on reduced-round MiMC in a low-memory scenario](https://eprint.iacr.org/2019/812.pdf){:target="_blank"}.
