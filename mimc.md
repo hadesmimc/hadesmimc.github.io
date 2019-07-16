@@ -22,10 +22,10 @@ The precise definition of the round function of MiMC and all other details can b
 Reference implementations are available for both the block cipher and the hash function in a sponge mode. The block cipher uses a block size of 129 bits, where computations take place in \\(\mathbb F_{2^n}\\), and the permutation in the sponge mode uses a block size of \\(r + c = 769\\) bits, where \\(r = 512\\) and \\(c = 257\\). All resources, together with a script to create round constants using the Grain LFSR [[1]][1]{:target="_blank"}, can be found [in our repository](https://extgit.iaik.tugraz.at/krypto/mimc/tree/master/code/implementations){:target="_blank"}.
 
 # Third-Party Analysis
-Since its publication in 2016, no attack on full-round MiMC has been found. The only third-party analysis published regards an interpolation attack on reduced-round MiMC in a low-memory scenario [[2]][2].
+Since its publication in 2016, no attack on full-round MiMC has been found. The only third-party analysis published regards an interpolation attack on reduced-round MiMC in a low-memory scenario [[2]][2]{:target="_blank"}.
 
 # Use Cases
-Due to its simple structure and absence of any attacks since its publication, MiMC has been considered to be used in various scenarios which benefit from its algebraic structure. For example, it can be used as a verifiable delay function ([[2]][2], [[3]][3]). It is also currently being evaluated as a candidate for Zcash [[4]][4].
+Due to its simple structure and absence of any attacks since its publication, MiMC has been considered to be used in various scenarios which benefit from its algebraic structure. For example, it can be used as a verifiable delay function ([[3]][3]{:target="_blank"}, [[4]][4]{:target="_blank"}). It is also currently being evaluated as a candidate for Zcash [[5]][5]{:target="_blank"}.
 
 
 [1]: https://www.ecrypt.eu.org/stream/ciphers/grain/grain.pdf
