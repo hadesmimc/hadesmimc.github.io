@@ -19,7 +19,7 @@ For an \\(n\\)-bit key, the key scheduling adds the same \\(n\\)-bit key at each
 The precise definition of the round function of MiMC and all other details can be found [in the paper](https://eprint.iacr.org/2016/492.pdf){:target="_blank"}.
 
 # Implementations
-Reference implementations are available for both the block cipher and the hash function in a sponge mode. The block cipher uses a block size of 129 bits, where computations take place in \\(\mathbb F_{2^n}\\), and the permutation in the sponge mode uses a block size of \\(r + c = 769 bits\\), where \\(r = 512\\) and \\(c = 257\\). All resources, together with a script to create round constants using the [Grain LFSR][1], can be found [in our repository](https://extgit.iaik.tugraz.at/krypto/mimc/tree/master/code/implementations){:target="_blank"}.
+Reference implementations are available for both the block cipher and the hash function in a sponge mode. The block cipher uses a block size of 129 bits, where computations take place in \\(\mathbb F_{2^n}\\), and the permutation in the sponge mode uses a block size of \\(r + c = 769\\) bits, where \\(r = 512\\) and \\(c = 257\\). All resources, together with a script to create round constants using the Grain LFSR [[1]][1], can be found [in our repository](https://extgit.iaik.tugraz.at/krypto/mimc/tree/master/code/implementations){:target="_blank"}.
 
 All resources can be found in our repository. https://extgit.iaik.tugraz.at/krypto/mimc/tree/master/code
 
