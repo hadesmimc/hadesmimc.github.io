@@ -13,4 +13,4 @@ MiMC is a family of block ciphers and hash functions primarily designed for SNAR
 ## GMiMC, Starkad and Poseidon
 GMiMC borrows MiMC's core component -- a low-degree round function -- and uses it in various unbalanced Feistel constructions. More details about this approach can be found [here](https://hadesmimc.github.io/gmimc/).
 
-While MiMC and GMiMC are defined as block ciphers, Starkad and Poseidon are hash functions using the unkeyed permutations Starkad\\(^\pi\\) Poseidon\\(^\pi\\). They are built using a novel SPN approach to further improve the applicability in the use cases mentioned above. Both Starkad and Poseidon a described in more detail [here](https://hadesmimc.github.io/starkadposeidon/).
+While MiMC and GMiMC are defined as block ciphers, Starkad and Poseidon are hash functions using the unkeyed permutations Starkad\\(^\pi\\) and Poseidon\\(^\pi\\). They are built using a novel SPN approach to further improve the applicability in the use cases mentioned above. Both Starkad and Poseidon a described in more detail [here](https://hadesmimc.github.io/starkadposeidon/).
