@@ -7,7 +7,6 @@ permalink: /mimc/
 {% include lib/mathjax.html %}
 
 # Description
-
 MiMC is block cipher and hash function family designed specifically for SNARK applications. The low multiplicative complexity of MiMC over prime fields makes it suitable for ZK-SNARK applications such as ZCash.
 
 The core component of MiMC is the function $$ f(x) = x^3 $$. The computation of this function takes place in \\(\mathbb{F}_q\\), where \\(q = p\\) or \\(q = 2^n\\) for a prime number \\(p\\) and a natural number \\(n\\). 
@@ -24,7 +23,7 @@ Reference implementations are available for both the block cipher and the hash f
 # Third-Party Analysis
 Since its publication in 2016, no attack on full-round MiMC has been found. The only third-party analysis published regards an interpolation attack on reduced-round MiMC in a low-memory scenario [[2]][2]{:target="_blank"}.
 
-# Use Cases
+# Applications
 Due to its simple structure and absence of any attacks since its publication, MiMC has been considered to be used in various scenarios which benefit from its algebraic structure. For example, it can be used as a verifiable delay function ([[3]][3]{:target="_blank"}, [[4]][4]{:target="_blank"}). It is also currently being evaluated as a candidate for Zcash [[5]][5]{:target="_blank"}.
 
 
