@@ -15,16 +15,16 @@ There exist two variants of MiMC, namely MiMC-\\(n/n\\) (or MiMC-\\(p/p\\) for p
 
 For an \\(n\\)-bit key, the key scheduling adds the same \\(n\\)-bit key at each round and is followed by the round constant addition. For a \\(2n\\)-bit key, the two \\(n\\)-bit keys are added alternately.
 
-The precise definition of the round function of MiMC and all other details can be found [in the paper](https://eprint.iacr.org/2016/492){:target="_blank"}.
+The precise definition of the round function of MiMC and all other details can be found [in the paper](https://eprint.iacr.org/2016/492).
 
 # Implementations
-Reference implementations are available for both the block cipher and the hash function in a sponge mode. The block cipher uses a block size of 129 bits, where computations take place in \\(\mathbb F_{2^n}\\), and the permutation in the sponge mode uses a block size of \\(r + c = 769\\) bits, where \\(r = 512\\) and \\(c = 257\\). All resources, together with a script to create round constants using the Grain LFSR [[1]][1]{:target="_blank"}, can be found [in our repository](https://extgit.iaik.tugraz.at/krypto/mimc/tree/master/code/){:target="_blank"}.
+Reference implementations are available for both the block cipher and the hash function in a sponge mode. The block cipher uses a block size of 129 bits, where computations take place in \\(\mathbb F_{2^n}\\), and the permutation in the sponge mode uses a block size of \\(r + c = 769\\) bits, where \\(r = 512\\) and \\(c = 257\\). All resources, together with a script to create round constants using the Grain LFSR [[1]][1], can be found [in our repository](https://extgit.iaik.tugraz.at/krypto/mimc/tree/master/code/).
 
 # Third-Party Analysis
-Since its publication in 2016, no attack on full-round MiMC has been found. The only third-party analysis published regards an interpolation attack on reduced-round MiMC in a low-memory scenario [[2]][2]{:target="_blank"}.
+Since its publication in 2016, no attack on full-round MiMC has been found. The only third-party analysis published regards an interpolation attack on reduced-round MiMC in a low-memory scenario [[2]][2].
 
 # Applications
-Due to its simple structure and absence of any attacks since its publication, MiMC has been considered to be used in various scenarios which benefit from its algebraic structure. For example, it can be used as a verifiable delay function ([[3]][3]{:target="_blank"}, [[4]][4]{:target="_blank"}). It is also currently being evaluated as a candidate for Zcash [[5]][5]{:target="_blank"}.
+Due to its simple structure and absence of any attacks since its publication, MiMC has been considered to be used in various scenarios which benefit from its algebraic structure. For example, it can be used as a verifiable delay function ([[3]][3], [[4]][4]). It is also currently being evaluated as a candidate for Zcash [[5]][5].
 
 
 [1]: https://www.ecrypt.eu.org/stream/ciphers/grain/grain.pdf
